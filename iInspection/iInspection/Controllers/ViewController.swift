@@ -18,7 +18,8 @@ class ViewController: UITableViewController {
     }
 
     @objc func handleLogout() {
-        
+        let loginController = LoginController()
+        present(loginController, animated: true, completion: nil)
     }
 }
 
