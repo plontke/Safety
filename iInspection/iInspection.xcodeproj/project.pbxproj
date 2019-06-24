@@ -12,6 +12,7 @@
 		E3B1A993996B5866819D0350 /* Pods_iInspection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7289D77DB31FB19C55161C /* Pods_iInspection.framework */; };
 		E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B99B822BD92380099DCF0 /* LoginController.swift */; };
 		E45B99BB22BDC7840099DCF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */; };
+		E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3537622BFFEEB00734604 /* PasswordResetController.swift */; };
 		E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */; };
 		E4E838A222BD8DE7008E2415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838A122BD8DE7008E2415 /* ViewController.swift */; };
 		E4E838A722BD8DE8008E2415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E838A622BD8DE8008E2415 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		C7C8AE7E15BDBEEC68CDD04C /* Pods_iInspectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iInspectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45B99B822BD92380099DCF0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4C3537622BFFEEB00734604 /* PasswordResetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetController.swift; sourceTree = "<group>"; };
 		E4E8389C22BD8DE7008E2415 /* iInspection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iInspection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4E838A122BD8DE7008E2415 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				E4E838A122BD8DE7008E2415 /* ViewController.swift */,
 				E45B99B822BD92380099DCF0 /* LoginController.swift */,
+				E4C3537622BFFEEB00734604 /* PasswordResetController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			files = (
 				E4E838A222BD8DE7008E2415 /* ViewController.swift in Sources */,
 				E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */,
+				E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */,
 				E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
