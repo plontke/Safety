@@ -14,7 +14,7 @@
 		E45B99BB22BDC7840099DCF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */; };
 		E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3537622BFFEEB00734604 /* PasswordResetController.swift */; };
 		E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */; };
-		E4E838A222BD8DE7008E2415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838A122BD8DE7008E2415 /* ViewController.swift */; };
+		E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838A122BD8DE7008E2415 /* HomeController.swift */; };
 		E4E838A722BD8DE8008E2415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E838A622BD8DE8008E2415 /* Assets.xcassets */; };
 		E4E838B522BD8DE8008E2415 /* iInspectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838B422BD8DE8008E2415 /* iInspectionTests.swift */; };
 		E4E838C022BD8DE8008E2415 /* iInspectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838BF22BD8DE8008E2415 /* iInspectionUITests.swift */; };
@@ -51,7 +51,7 @@
 		E4C3537622BFFEEB00734604 /* PasswordResetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetController.swift; sourceTree = "<group>"; };
 		E4E8389C22BD8DE7008E2415 /* iInspection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iInspection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4E838A122BD8DE7008E2415 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4E838A122BD8DE7008E2415 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		E4E838A622BD8DE8008E2415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4E838AB22BD8DE8008E2415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E838B022BD8DE8008E2415 /* iInspectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iInspectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +117,7 @@
 		E45B99B722BD8FD60099DCF0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E4E838A122BD8DE7008E2415 /* ViewController.swift */,
+				E4E838A122BD8DE7008E2415 /* HomeController.swift */,
 				E45B99B822BD92380099DCF0 /* LoginController.swift */,
 				E4C3537622BFFEEB00734604 /* PasswordResetController.swift */,
 			);
@@ -396,7 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4E838A222BD8DE7008E2415 /* ViewController.swift in Sources */,
+				E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */,
 				E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */,
 				E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */,
 				E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */,

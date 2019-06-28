@@ -1,0 +1,6 @@
+framework module Pods_iInspectionUITests {
+  umbrella header "Pods-iInspectionUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
