@@ -10,10 +10,13 @@
 		BE85BD6598F00A97B33942EA /* Pods_iInspectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2874D5DB78BDCABBCB25F29 /* Pods_iInspectionUITests.framework */; };
 		CBDD0C1FF25E06A83FA454A5 /* Pods_iInspectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C8AE7E15BDBEEC68CDD04C /* Pods_iInspectionTests.framework */; };
 		E3B1A993996B5866819D0350 /* Pods_iInspection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7289D77DB31FB19C55161C /* Pods_iInspection.framework */; };
+		E427580322C70D0F00F78C11 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E427580222C70D0F00F78C11 /* Scanner.swift */; };
+		E427580522C71DB000F78C11 /* InspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E427580422C71DB000F78C11 /* InspectViewController.swift */; };
 		E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B99B822BD92380099DCF0 /* LoginController.swift */; };
 		E45B99BB22BDC7840099DCF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */; };
 		E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3537622BFFEEB00734604 /* PasswordResetController.swift */; };
 		E4DEBC6922C6F08300CA4071 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */; };
+		E4DEBC6B22C6F94A00CA4071 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEBC6A22C6F94A00CA4071 /* ScannerViewController.swift */; };
 		E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */; };
 		E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838A122BD8DE7008E2415 /* HomeController.swift */; };
 		E4E838A722BD8DE8008E2415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E838A622BD8DE8008E2415 /* Assets.xcassets */; };
@@ -47,10 +50,13 @@
 		84AF71818481DC12A96EDB55 /* Pods-iInspection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iInspection.debug.xcconfig"; path = "Target Support Files/Pods-iInspection/Pods-iInspection.debug.xcconfig"; sourceTree = "<group>"; };
 		9A7289D77DB31FB19C55161C /* Pods_iInspection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iInspection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C8AE7E15BDBEEC68CDD04C /* Pods_iInspectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iInspectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E427580222C70D0F00F78C11 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		E427580422C71DB000F78C11 /* InspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectViewController.swift; sourceTree = "<group>"; };
 		E45B99B822BD92380099DCF0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4C3537622BFFEEB00734604 /* PasswordResetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetController.swift; sourceTree = "<group>"; };
 		E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E4DEBC6A22C6F94A00CA4071 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		E4E8389C22BD8DE7008E2415 /* iInspection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iInspection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4E838A122BD8DE7008E2415 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E427580122C70CFB00F78C11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E427580222C70D0F00F78C11 /* Scanner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E45B99B722BD8FD60099DCF0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +137,8 @@
 				E45B99B822BD92380099DCF0 /* LoginController.swift */,
 				E4C3537622BFFEEB00734604 /* PasswordResetController.swift */,
 				E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */,
+				E4DEBC6A22C6F94A00CA4071 /* ScannerViewController.swift */,
+				E427580422C71DB000F78C11 /* InspectViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +175,7 @@
 		E4E8389E22BD8DE7008E2415 /* iInspection */ = {
 			isa = PBXGroup;
 			children = (
+				E427580122C70CFB00F78C11 /* Model */,
 				E4DEBC6722C6EFC200CA4071 /* Views */,
 				E45B99B722BD8FD60099DCF0 /* Controllers */,
 				E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */,
@@ -410,8 +427,11 @@
 				E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */,
 				E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */,
 				E4DEBC6922C6F08300CA4071 /* TabBarViewController.swift in Sources */,
+				E427580522C71DB000F78C11 /* InspectViewController.swift in Sources */,
 				E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */,
 				E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */,
+				E427580322C70D0F00F78C11 /* Scanner.swift in Sources */,
+				E4DEBC6B22C6F94A00CA4071 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

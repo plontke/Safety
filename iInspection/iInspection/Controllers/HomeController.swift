@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 
-class HomeController: UICollectionViewController {
+class HomeController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

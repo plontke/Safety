@@ -22,7 +22,14 @@ class TabBarViewController: UITabBarController {
         }
         
         let homeController = HomeController()
-        viewControllers = [homeController]
+        let homeNavController = UINavigationController(rootViewController: homeController)
+        homeNavController.title = "Home"
+        
+        
+        let scannerController = ScannerViewController()
+        let scannerNavController = UINavigationController(rootViewController: scannerController)
+        scannerNavController.title = "Scanner"
+        viewControllers = [homeNavController, scannerNavController]
         
     }
     @objc func handleLogout() {
