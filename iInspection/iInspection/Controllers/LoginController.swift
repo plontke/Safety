@@ -316,7 +316,7 @@ class LoginController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password, completion: {(user, error) in
             if error != nil {
                 self.activityIndicator.stopAnimating()
-                print(error)
+                print(error!)
                 self.errorLabel.isHidden = false
                 return
             }
@@ -344,7 +344,7 @@ class LoginController: UIViewController {
                 return
             }else{
                 // Log the User in
-                print(result?.additionalUserInfo)
+                print(result?.additionalUserInfo ?? "default Value ")
                 Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                     if error != nil {
                         print(error.debugDescription)

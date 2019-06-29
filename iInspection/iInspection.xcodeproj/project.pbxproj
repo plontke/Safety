@@ -13,6 +13,7 @@
 		E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B99B822BD92380099DCF0 /* LoginController.swift */; };
 		E45B99BB22BDC7840099DCF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */; };
 		E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3537622BFFEEB00734604 /* PasswordResetController.swift */; };
+		E4DEBC6922C6F08300CA4071 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */; };
 		E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */; };
 		E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838A122BD8DE7008E2415 /* HomeController.swift */; };
 		E4E838A722BD8DE8008E2415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E838A622BD8DE8008E2415 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		E45B99B822BD92380099DCF0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4C3537622BFFEEB00734604 /* PasswordResetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetController.swift; sourceTree = "<group>"; };
+		E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E4E8389C22BD8DE7008E2415 /* iInspection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iInspection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4E838A122BD8DE7008E2415 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -120,8 +122,16 @@
 				E4E838A122BD8DE7008E2415 /* HomeController.swift */,
 				E45B99B822BD92380099DCF0 /* LoginController.swift */,
 				E4C3537622BFFEEB00734604 /* PasswordResetController.swift */,
+				E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E4DEBC6722C6EFC200CA4071 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E4E8389322BD8DE7008E2415 = {
@@ -149,6 +159,7 @@
 		E4E8389E22BD8DE7008E2415 /* iInspection */ = {
 			isa = PBXGroup;
 			children = (
+				E4DEBC6722C6EFC200CA4071 /* Views */,
 				E45B99B722BD8FD60099DCF0 /* Controllers */,
 				E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */,
 				E4E838A622BD8DE8008E2415 /* Assets.xcassets */,
@@ -398,6 +409,7 @@
 			files = (
 				E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */,
 				E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */,
+				E4DEBC6922C6F08300CA4071 /* TabBarViewController.swift in Sources */,
 				E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */,
 				E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */,
 			);
