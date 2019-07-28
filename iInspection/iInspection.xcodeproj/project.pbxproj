@@ -10,18 +10,28 @@
 		BE85BD6598F00A97B33942EA /* Pods_iInspectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2874D5DB78BDCABBCB25F29 /* Pods_iInspectionUITests.framework */; };
 		CBDD0C1FF25E06A83FA454A5 /* Pods_iInspectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C8AE7E15BDBEEC68CDD04C /* Pods_iInspectionTests.framework */; };
 		E3B1A993996B5866819D0350 /* Pods_iInspection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7289D77DB31FB19C55161C /* Pods_iInspection.framework */; };
-		E427580322C70D0F00F78C11 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E427580222C70D0F00F78C11 /* Scanner.swift */; };
+		E41E70B222EBAB2000070D30 /* WorkOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41E70B122EBAB2000070D30 /* WorkOrder.swift */; };
+		E41E70B422EBE6E900070D30 /* WorkOrderCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41E70B322EBE6E900070D30 /* WorkOrderCellCollectionViewCell.swift */; };
+		E41E70BA22ED47F600070D30 /* CreateWorkOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41E70B922ED47F600070D30 /* CreateWorkOrderController.swift */; };
 		E427580522C71DB000F78C11 /* InspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E427580422C71DB000F78C11 /* InspectViewController.swift */; };
 		E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45B99B822BD92380099DCF0 /* LoginController.swift */; };
 		E45B99BB22BDC7840099DCF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */; };
+		E4C09D4922ED48D80038A3AF /* CreateWorkOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C09D4822ED48D80038A3AF /* CreateWorkOrderView.swift */; };
 		E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3537622BFFEEB00734604 /* PasswordResetController.swift */; };
 		E4DEBC6922C6F08300CA4071 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */; };
 		E4DEBC6B22C6F94A00CA4071 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DEBC6A22C6F94A00CA4071 /* ScannerViewController.swift */; };
 		E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */; };
-		E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838A122BD8DE7008E2415 /* HomeController.swift */; };
+		E4E838A222BD8DE7008E2415 /* MyWorkOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838A122BD8DE7008E2415 /* MyWorkOrders.swift */; };
 		E4E838A722BD8DE8008E2415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E838A622BD8DE8008E2415 /* Assets.xcassets */; };
 		E4E838B522BD8DE8008E2415 /* iInspectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838B422BD8DE8008E2415 /* iInspectionTests.swift */; };
 		E4E838C022BD8DE8008E2415 /* iInspectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E838BF22BD8DE8008E2415 /* iInspectionUITests.swift */; };
+		E4F87D4122C7F4F3001C9383 /* BarcodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87D4022C7F4F3001C9383 /* BarcodeGenerator.swift */; };
+		E4F87D4322C8369E001C9383 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87D4222C8369E001C9383 /* Plant.swift */; };
+		E4F87D4522C836B5001C9383 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87D4422C836B5001C9383 /* User.swift */; };
+		E4F87D4722C836C8001C9383 /* Lead.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87D4622C836C8001C9383 /* Lead.swift */; };
+		E4F87D4922C836F3001C9383 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87D4822C836F3001C9383 /* Building.swift */; };
+		E4F87D4B22C83701001C9383 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87D4A22C83701001C9383 /* Item.swift */; };
+		E4F87D4D22C8370F001C9383 /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87D4C22C8370F001C9383 /* Inspection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,16 +60,19 @@
 		84AF71818481DC12A96EDB55 /* Pods-iInspection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iInspection.debug.xcconfig"; path = "Target Support Files/Pods-iInspection/Pods-iInspection.debug.xcconfig"; sourceTree = "<group>"; };
 		9A7289D77DB31FB19C55161C /* Pods_iInspection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iInspection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C8AE7E15BDBEEC68CDD04C /* Pods_iInspectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iInspectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E427580222C70D0F00F78C11 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		E41E70B122EBAB2000070D30 /* WorkOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrder.swift; sourceTree = "<group>"; };
+		E41E70B322EBE6E900070D30 /* WorkOrderCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		E41E70B922ED47F600070D30 /* CreateWorkOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkOrderController.swift; sourceTree = "<group>"; };
 		E427580422C71DB000F78C11 /* InspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectViewController.swift; sourceTree = "<group>"; };
 		E45B99B822BD92380099DCF0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E45B99BA22BDC7840099DCF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4C09D4822ED48D80038A3AF /* CreateWorkOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkOrderView.swift; sourceTree = "<group>"; };
 		E4C3537622BFFEEB00734604 /* PasswordResetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetController.swift; sourceTree = "<group>"; };
 		E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E4DEBC6A22C6F94A00CA4071 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		E4E8389C22BD8DE7008E2415 /* iInspection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iInspection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E8389F22BD8DE7008E2415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4E838A122BD8DE7008E2415 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		E4E838A122BD8DE7008E2415 /* MyWorkOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkOrders.swift; sourceTree = "<group>"; };
 		E4E838A622BD8DE8008E2415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4E838AB22BD8DE8008E2415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E838B022BD8DE8008E2415 /* iInspectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iInspectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +81,13 @@
 		E4E838BB22BD8DE8008E2415 /* iInspectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iInspectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E838BF22BD8DE8008E2415 /* iInspectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iInspectionUITests.swift; sourceTree = "<group>"; };
 		E4E838C122BD8DE8008E2415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F87D4022C7F4F3001C9383 /* BarcodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeGenerator.swift; sourceTree = "<group>"; };
+		E4F87D4222C8369E001C9383 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		E4F87D4422C836B5001C9383 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E4F87D4622C836C8001C9383 /* Lead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lead.swift; sourceTree = "<group>"; };
+		E4F87D4822C836F3001C9383 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		E4F87D4A22C83701001C9383 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E4F87D4C22C8370F001C9383 /* Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
 		F2874D5DB78BDCABBCB25F29 /* Pods_iInspectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iInspectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,7 +145,14 @@
 		E427580122C70CFB00F78C11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E427580222C70D0F00F78C11 /* Scanner.swift */,
+				E4F87D4022C7F4F3001C9383 /* BarcodeGenerator.swift */,
+				E4F87D4222C8369E001C9383 /* Plant.swift */,
+				E4F87D4422C836B5001C9383 /* User.swift */,
+				E4F87D4622C836C8001C9383 /* Lead.swift */,
+				E4F87D4822C836F3001C9383 /* Building.swift */,
+				E4F87D4A22C83701001C9383 /* Item.swift */,
+				E4F87D4C22C8370F001C9383 /* Inspection.swift */,
+				E41E70B122EBAB2000070D30 /* WorkOrder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,12 +160,13 @@
 		E45B99B722BD8FD60099DCF0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E4E838A122BD8DE7008E2415 /* HomeController.swift */,
+				E4E838A122BD8DE7008E2415 /* MyWorkOrders.swift */,
 				E45B99B822BD92380099DCF0 /* LoginController.swift */,
 				E4C3537622BFFEEB00734604 /* PasswordResetController.swift */,
 				E4DEBC6822C6F08300CA4071 /* TabBarViewController.swift */,
 				E4DEBC6A22C6F94A00CA4071 /* ScannerViewController.swift */,
 				E427580422C71DB000F78C11 /* InspectViewController.swift */,
+				E41E70B922ED47F600070D30 /* CreateWorkOrderController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +174,8 @@
 		E4DEBC6722C6EFC200CA4071 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E41E70B322EBE6E900070D30 /* WorkOrderCellCollectionViewCell.swift */,
+				E4C09D4822ED48D80038A3AF /* CreateWorkOrderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -424,13 +454,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4E838A222BD8DE7008E2415 /* HomeController.swift in Sources */,
+				E4F87D4122C7F4F3001C9383 /* BarcodeGenerator.swift in Sources */,
+				E4F87D4322C8369E001C9383 /* Plant.swift in Sources */,
+				E4F87D4722C836C8001C9383 /* Lead.swift in Sources */,
+				E4F87D4D22C8370F001C9383 /* Inspection.swift in Sources */,
+				E41E70BA22ED47F600070D30 /* CreateWorkOrderController.swift in Sources */,
+				E4E838A222BD8DE7008E2415 /* MyWorkOrders.swift in Sources */,
 				E45B99B922BD92380099DCF0 /* LoginController.swift in Sources */,
 				E4DEBC6922C6F08300CA4071 /* TabBarViewController.swift in Sources */,
 				E427580522C71DB000F78C11 /* InspectViewController.swift in Sources */,
+				E41E70B222EBAB2000070D30 /* WorkOrder.swift in Sources */,
+				E4F87D4B22C83701001C9383 /* Item.swift in Sources */,
+				E4F87D4922C836F3001C9383 /* Building.swift in Sources */,
 				E4C3537722BFFEEB00734604 /* PasswordResetController.swift in Sources */,
+				E41E70B422EBE6E900070D30 /* WorkOrderCellCollectionViewCell.swift in Sources */,
 				E4E838A022BD8DE7008E2415 /* AppDelegate.swift in Sources */,
-				E427580322C70D0F00F78C11 /* Scanner.swift in Sources */,
+				E4F87D4522C836B5001C9383 /* User.swift in Sources */,
+				E4C09D4922ED48D80038A3AF /* CreateWorkOrderView.swift in Sources */,
 				E4DEBC6B22C6F94A00CA4071 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

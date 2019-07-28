@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class TabBarViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,16 +20,14 @@ class TabBarViewController: UITabBarController {
         }else {
             print(Auth.auth().currentUser?.uid ?? "12345")
         }
-        
-        let homeController = HomeController()
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionHeadersPinToVisibleBounds = true
+        let homeController = MyWorkOrders(collectionViewLayout: layout)
         let homeNavController = UINavigationController(rootViewController: homeController)
-        homeNavController.title = "Home"
+        homeNavController.title = "My Work Orders"
         
         
-        let scannerController = ScannerViewController()
-        let scannerNavController = UINavigationController(rootViewController: scannerController)
-        scannerNavController.title = "Scanner"
-        viewControllers = [homeNavController, scannerNavController]
+        viewControllers = [homeNavController]
         
     }
     @objc func handleLogout() {
