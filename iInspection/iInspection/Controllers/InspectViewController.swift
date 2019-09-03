@@ -24,6 +24,10 @@ class InspectViewController: UIViewController {
         share(image: image)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        dismiss(animated: false, completion: nil)
+    }
+    
     func share(image: UIImage){
         let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
         present(vc, animated: true, completion: nil)

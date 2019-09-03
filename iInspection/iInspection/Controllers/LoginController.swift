@@ -322,6 +322,7 @@ class LoginController: UIViewController {
             }
             self.activityIndicator.stopAnimating()
             self.errorLabel.isHidden = true
+            self.dismiss(animated: true, completion: nil)
             self.presentingViewController?.dismiss(animated: true, completion: nil)
         })
     }
@@ -349,25 +350,24 @@ class LoginController: UIViewController {
                     if error != nil {
                         print(error.debugDescription)
                         self.errorLabel.isHidden = false
-                        self.activityIndicator.stopAnimating()
+                        self.activityIndicator.stopAnimating()  
                         return
                     } else {
                         // User created in Authentication, must put them into the DB now
                         print("User Signed in")
                         let db = Firestore.firestore()
-                        var ref: DocumentReference? = nil
-                        ref = db.collection("users").addDocument(data: [
-                            "name" : name,
-                            "uid" : Auth.auth().currentUser!.uid,
-                            "email" : email])
+                        
+                        let user = User(UID: Auth.auth().currentUser!.uid, Name: name, Email: email, IsLead: false)
+                        db.collection("users").document(Auth.auth().currentUser!.uid).setData(["name": user.getName(), "uid" : user.getUid(),"email" : user.getEmail(), "plantCode" : user.getPlant(), "myWorkorders": [], "isLead": false])
                         // GOTO the Original screen
                         self.errorLabel.isHidden = true
                         self.activityIndicator.stopAnimating()
+                        self.dismiss(animated: true, completion: nil)
                         self.presentingViewController?.dismiss(animated: true, completion: nil)
                         
                         }
                     }
-                    
+
                     
                 }
             }
@@ -379,12 +379,7 @@ class LoginController: UIViewController {
     @objc func handleControlChange() {
         let title = loginRegisterSegmentedControl.titleForSegment(at: loginRegisterSegmentedControl.selectedSegmentIndex)
         loginRegisterButton.setTitle(title, for: .normal)
-        
-        
         inputsContainerViewHeightAnchor?.constant = loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 100 : 150
-        
-        
-        
         nameTextViewHeightAnchor?.isActive = false
         nameTextViewHeightAnchor = nameTextField.heightAnchor.constraint(equalTo: inputsContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 0 : 1/3)
         nameTextViewHeightAnchor?.isActive = true

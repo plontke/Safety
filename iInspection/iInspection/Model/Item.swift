@@ -10,7 +10,7 @@ import UIKit
 
 class Item: NSObject {
     
-    private var inpectionCodes: [String]
+    private var workOrderCodes: [String]
     private var buildingCode: String
     private var nickname: String
     private var itemCode: String
@@ -18,7 +18,7 @@ class Item: NSObject {
     
     init(BuildingCode buildingCode: String, nickname: String, itemCode: String){
         self.buildingCode = buildingCode
-        self.inpectionCodes = []
+        self.workOrderCodes = []
         self.itemCode = itemCode
         self.nickname = nickname
         self.latestDate = Date()
@@ -48,8 +48,8 @@ class Item: NSObject {
         return self.itemCode
     }
     
-    public func addInspection(inspectionCode: String){
-        self.inpectionCodes.append(inspectionCode)
+    public func addInspection(workOrderCode: String){
+        self.workOrderCodes.append(workOrderCode)
     }
     
   

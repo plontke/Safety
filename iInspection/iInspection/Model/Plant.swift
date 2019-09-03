@@ -6,35 +6,53 @@
 //  Copyright © 2019 Cohen Plontke. All rights reserved.
 //
 
+import Firebase
 
-
-class Plant {
-    private var lead: Lead;
-    private var workers: [User]
+class Plant : NSObject{
+    private var leadCode: String;
+    private var workers: [String]
     private var buildings: [Building]
     private var plantCode: String
+    private var nickName: String
+    private var company: String
     
-    init(theLead lead: Lead, thePlantCode plantCode: String ){
-        self.lead = lead
-        self.plantCode = plantCode
-        self.workers = []
+    
+   init(theLead lead: String, theNickname nickname: String, theCompany company: String){
+        self.nickName = nickname
+        self.company = company
+        self.leadCode = lead
+        self.workers = [lead]
         self.buildings = []
-        
+        self.plantCode = company + "," + nickName
+        super.init()
+        uploadData()
+    
     }
     
-    public func setLead(theLead lead: Lead){
-        self.lead = lead
+    public func uploadData() {
+        let db = Firestore.firestore()
+        db.collection("plants").document(self.plantCode).setData([
+            "nickName": self.nickName,
+            "company" : self.company,
+            "leadCode" :self.leadCode,
+            "workers" : self.workers,
+            "buildings" : self.buildings,
+            "plantCode" : self.plantCode])
     }
     
-    public func getLead() -> Lead {
-        return self.lead
+    public func setLead(theLead lead: String){
+        self.leadCode = lead
     }
     
-    public func addWorkers(aWorker worker: User){
+    public func getLead() -> String {
+        return self.leadCode
+    }
+    
+    public func addWorkers(aWorker worker: String){
         workers.append(worker)
     }
     
-    public func deleteInspector(oldInspector inspector: User){
+    public func deleteInspector(oldInspector inspector: String){
         if let index = self.workers.firstIndex(of: inspector){
             workers.remove(at: index)
         }

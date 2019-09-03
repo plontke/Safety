@@ -8,18 +8,11 @@
 
 class Lead: User {
     
-    override init(UID uid: String, Name name: String,Email email: String) {
-        super.init(UID: uid, Name: name, Email: email )
+    override init(UID uid: String, Name name: String,Email email: String, IsLead isLead: Bool) {
+        super.init(UID: uid, Name: name, Email: email, IsLead: isLead)
     }
     
-    public func getPlantCode() -> String {
-        // TODO
-        return ""
-    }
-    
-    public func approveInspector(Inspector worker: User){
-        // TODO
-    }
+
     
     public func isLead() -> Bool {
         return true

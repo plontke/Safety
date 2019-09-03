@@ -24,9 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: TabBarViewController())
+        window?.rootViewController = UINavigationController(rootViewController: ContainerViewController())
         
-        let db = Firestore.firestore()
         return true
     }
 

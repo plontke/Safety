@@ -10,13 +10,13 @@ import Foundation
 
 class Building: NSObject {
     
-    private var plant: Plant
+    private var plantCode: String
     private var itemCodes: [String]
     private var buildingCode: String
     private var nickname: String
     
-    init(Plant plant: Plant, BuildingCode buildingCode: String, Nickname nickname: String){
-        self.plant = plant
+    init(Plant plant: String, BuildingCode buildingCode: String, Nickname nickname: String){
+        self.plantCode = plant
         self.itemCodes = []
         self.buildingCode = buildingCode
         self.nickname = nickname
